@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willibed</title>
+    <link rel="icon" href="https://zupimages.net/up/24/44/jdov.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Scope+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('file:///C:/Users/ismab/Downloads/Design%20sans%20titre%20(22)%20(1).png') center/cover no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+        .card {
+            width: 75%; /* Largeur définie pour maintenir le ratio 3:4 */
+            max-width: 900px;
+            aspect-ratio: 3 / 4; /* Maintient le rapport 3:4 */
+            text-align: center;
+            padding: 75px 100px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .card h2 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .card p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .social-links img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+            margin-top: 15px;
+        }
+        .social-links img:hover {
+            background-color: #5ECCF5;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #5ECCF5;
+            background: #ffffff;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            margin-top: 40px;
+            white-space: nowrap; /* Empêche le retour à la ligne */
+}
+        
+        .button:hover {
+            background-color: #5ECCF5;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+        <div class="card" data-tilt>
+            <img src="https://yt3.googleusercontent.com/Dq7XN-IwQ2JehjeRLEgGOcChA9P3sbk-nHP7eig6W8VoN6FVB7W9lAJfb_Pqu23YXWi-MWp6f2M=s160-c-k-c0x00ffffff-no-rj" alt="Photo de Profil" class="profile-img">
+            <h2>Willibed</h2>
+            <p>Youtubeur</p>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@Willibed"><img src="https://goodly.co.in/wp-content/uploads/2023/10/youtube-logo-png-46016-1.png" alt="Youtube"></a>
+                <a href="https://willibed.com"><img src="https://yt3.googleusercontent.com/Dq7XN-IwQ2JehjeRLEgGOcChA9P3sbk-nHP7eig6W8VoN6FVB7W9lAJfb_Pqu23YXWi-MWp6f2M=s160-c-k-c0x00ffffff-no-rj" alt="Mes Vêtements"></a>
+                <a href="https://www.instagram.com/willibed/"><img src="https://img.freepik.com/vecteurs-libre/logo-instagram_1199-122.jpg?semt=ais_hybrid" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@willibed"><img src="https://www.addlance.com/blog/wp-content/uploads/2021/10/tiktok-logo-300x300.png" alt="TikTok"></a>
+            </div>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=willibed.contact@gmail.com" class="button">Contactez-moi</a>
+
+        </div>
+    </div>
+
+    <script>
+        // Script pour l'effet de tilt (Vanilla Tilt)
+        document.querySelectorAll('.card').forEach(function(el) {
+            VanillaTilt.init(el, {
+                max: 200,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.5
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+</body>
+</html>
